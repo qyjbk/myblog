@@ -1,12 +1,9 @@
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <el-button type="primary" @click="">nihao</el-button>
+  <Layout></Layout>
 </template>
 
 <script lang="ts" setup>
-
+import Layout from '@/layout/index.vue';
 </script>
 
 <style scoped lang="scss">
