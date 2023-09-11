@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 首页图片 -->
-        <div class="w-full h-64 relative mb-20">
+        <div class="w-screen h-64 relative mb-20 minwidthbox">
             <el-image class='w-full h-full' src="../../../public/head.jpg" fit="cover">
                 <template #error>
                     <div class="image-slot flex  justify-center items-center w-full h-full text-3xl">
@@ -15,7 +15,21 @@
             </p>
         </div>
         <!-- 文章内容部分 -->
-        <ContentBox/>
+        <el-row :gutter="20" class="w-full">
+            <el-col :span="4">
+                <div class="grid-content ep-bg-purple" />
+            </el-col>
+            <el-col :span="12">
+                <ContentBox />
+            </el-col>
+            <el-col :span="4">e
+                <div class="grid-content ep-bg-purple" />
+            </el-col>
+            <el-col :span="4">
+                <div class="grid-content ep-bg-purple" />
+            </el-col>
+        </el-row>
+        
     </div>
 </template>
 

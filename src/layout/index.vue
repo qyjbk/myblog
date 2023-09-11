@@ -1,5 +1,5 @@
 <template>
-    <div class="font-mono">
+    <div class="font-mono w-screen ">
         <Header></Header>
         <router-view class="pt-12"></router-view>
     </div>

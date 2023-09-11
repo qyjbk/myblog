@@ -1,5 +1,5 @@
 <template>
-    <div class=" absolute w-full h-12 bg-slate-200 flex justify-between">
+    <div class=" absolute w-screen h-12 bg-slate-200 flex justify-between">
 
         <!-- logo box -->
         <h1 class="uppercase text-3xl leading-relaxed ml-8 tracking-widest">qyjbk</h1>
