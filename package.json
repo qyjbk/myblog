@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 192.168.30.168",
+    "dev": "vite --host",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
@@ -15,9 +15,11 @@
     "vue-router": "4"
   },
   "devDependencies": {
+    "@types/mockjs": "^1.0.7",
     "@types/node": "^20.5.9",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.15",
+    "mockjs": "^1.1.0",
     "postcss": "^8.4.29",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
