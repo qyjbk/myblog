@@ -29,12 +29,28 @@
                 <div class="grid-content ep-bg-purple" />
             </el-col>
         </el-row>
-        
     </div>
 </template>
 
 <script setup lang="ts">
 import ContentBox from '@/components/ContentBox/index.vue'
+import { onMounted, reactive } from 'vue';
+
+import { reqGetHomeCards } from "@/api/mock";
+
+const homeCards = reactive({data: ''})
+const getHomeCards = async () => {
+    try{
+        const res = await reqGetHomeCards();
+        homeCards.data = res.data;
+    }catch(err){
+        console.log(err);
+    }
+}
+
+onMounted(() => {
+    getHomeCards();
+})
 </script>
 
 <style scoped lang="scss">
